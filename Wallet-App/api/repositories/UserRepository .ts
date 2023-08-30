@@ -1,6 +1,6 @@
 import { Transaction } from "sequelize";
-import { IUser } from '../Helpers/User-Interface';
-import {sequelize, userModel } from "../helpers/DataBaseConnection"
+import { IUser } from '../helpers/IUser';
+import { sequelize, userModel } from "../helpers/DataBaseConnection"
 
 class UserRepository {
   private _transaction: Transaction | null = null;

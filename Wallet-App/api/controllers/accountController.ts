@@ -1,8 +1,9 @@
+import { Request, Response } from "express";
 import AuthService from "../services/AuthService";
 const authService = new AuthService();
 
 module.exports = {
-  async login(req, res) {
+  async login(req:Request, res:Response) {
     try {
       const { mobile, password } = req.body;
 
@@ -29,7 +30,7 @@ module.exports = {
     }
   },
 
-  async register(req, res) {
+  async register(req:Request, res:Response) {
     try {
       const { name, mobile, password, role } = req.body;
 

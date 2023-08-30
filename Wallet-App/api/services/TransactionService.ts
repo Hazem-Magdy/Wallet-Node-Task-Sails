@@ -1,4 +1,4 @@
-import { IUser } from '../Helpers/User-Interface';
+import { IUser } from '../helpers/IUser';
 import UserRepository from '../repositories/UserRepository ';
 import TransactionRepository from '../repositories/TransactionRepository ';
 

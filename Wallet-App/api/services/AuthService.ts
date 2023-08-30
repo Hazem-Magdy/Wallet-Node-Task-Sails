@@ -1,4 +1,4 @@
-import { IUser } from '../Helpers/User-Interface';
+import { IUser } from '../helpers/IUser';
 import * as bcrypt from 'bcrypt';
 import * as jwt from "jsonwebtoken";
 import  UserRepository from '../repositories/UserRepository ';

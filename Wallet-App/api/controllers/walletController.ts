@@ -1,4 +1,5 @@
-import { IUser } from '../Helpers/User-Interface';
+import { Request, Response } from "express";
+import { IUser } from '../helpers/IUser';
 import UserRepository from '../repositories/UserRepository ';
 import TransactionRepository from '../repositories/TransactionRepository ';
 import TransactionService from '../services/TransactionService';
@@ -8,7 +9,7 @@ const transactionRepository = new TransactionRepository();
 const transactionService = new TransactionService(userRepository, transactionRepository);
 
 module.exports = {
-  async transfer(req, res) {
+  async transfer(req:Request, res:Response) {
     try {
       const { senderMobile, receiverMobile, amount } = req.body;
 
